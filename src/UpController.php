@@ -35,7 +35,7 @@ class UpController
         //上传文件目录
         $config["savePath"] = "common/upload/".$path;
 
-        $upload = new Uploader('upfile',$config);
+        $upload = new \Uploader('upfile',$config);
         return $upload->getFileInfo();
     }
 }
